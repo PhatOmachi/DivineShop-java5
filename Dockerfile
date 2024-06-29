@@ -9,6 +9,12 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 
+# Kiểm tra sự tồn tại của file JAR
+RUN ls -l /app/app.jarx
+
+# Đảm bảo quyền truy cập đúng
+RUN chmod +x /app/app.jar
+
 ENV PORT=8080
 EXPOSE 8080
 
