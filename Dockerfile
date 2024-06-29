@@ -9,7 +9,7 @@ FROM openjdk:17-jdk-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 
-ENV PORT 8080
+ENV PORT = 8080
 EXPOSE 8080
 
 ENTRYPOINT ["java", "-Dserver.port=8080", "-jar", "/app/app.jar"]
