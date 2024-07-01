@@ -20,7 +20,9 @@ Cảm ơn sự đóng góp của các thành viên:
 
 **`Back-end:`** Spring boot
 
-**`Server:`** Azure (vì chỉ deploy 1 lần để test project trên server có ổn không nên nếu bạn có lấy về đẩy lên server thoải mái nhé 😄)
+**`Server:`** Azure
+
+**`CI/CD:`** GitHub Action
 
 
 ## Các account được sử dụng trong project với các quyền
@@ -31,13 +33,30 @@ Cảm ơn sự đóng góp của các thành viên:
 
 
 **User**
-- `Tài khoản` : john
-- `Mật khẩu` : test123
+- `Bạn có thể tạo theo cách của 1 user sài bình thường`
+
+## Cách thức để chạy project
+- B1 : `Bạn clone project về `
+- B2 : `Thực hiện chạy 3 file SQL trong thư mục sql`
+    ```bash
+    - Create_SQL_Java5_Divineshop.sql
+    - Insert_SQL_Java5_Divineshop.sql
+    - Trigger_SQL_Java5_Divineshop.sql
+    ```
+- B3 : `Vào trong project tìm đến thư mục resources và đến file application.properties`
+    - Thực hiện thay đổi spring.datasource.url = 'Connection strings đến database'
+
+- B4 : `Run project và trải nghiệm`
 
 
-## Đang cập nhật thêm
+```bash
+*Lưu ý khi chạy project nếu bạn có chạy 1 project khác thì rất có thể  sẽ bị trùng port với nhau (thực hiện thay đổi port)
+    -- Tìm đến thư mục resources và đến file application.properties
+        -> Tìm đến server.port hiện tại là 8080 
+            -> thay đổi thành server.port = `8081 hoặc tùy ý bạn`
+    --> Start lại project để trải nghiệm.
+```
 
-.....
     
 ## Câu hỏi cho project
 
