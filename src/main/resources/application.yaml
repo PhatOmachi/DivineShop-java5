@@ -4,7 +4,10 @@ spring:
     name: spring-boot-rest-api
   transaction:
     default-timeout: 300
-
+  mvc:
+    async:
+      request-timeout: 900000
+      
 payment:
   vnPay:
     url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
