@@ -24,11 +24,12 @@ public class Paymentservice {
     public PaymentDTO.VNPayResponse createVnPayPayment(HttpServletRequest request, String name) {
         long amount = Integer.parseInt(request.getParameter("amount")) * 100L;
         String bankCode = request.getParameter("bankCode");
+        System.out.println("bank" + bankCode);
         Map<String, String> vnpParamsMap = vnPayConfig.getVNPayConfig();
         vnpParamsMap.put("vnp_Amount", String.valueOf(amount));
-        if (bankCode != null && !bankCode.isEmpty()) {
-            vnpParamsMap.put("vnp_BankCode", bankCode);
-        }
+//        if (bankCode != null && !bankCode.isEmpty()) {
+//            vnpParamsMap.put("vnp_BankCode", bankCode);
+//        }
         vnpParamsMap.put("vnp_IpAddr", VNPayUtil.getIpAddress(request));
         vnpParamsMap.put("vnp_OrderInfo", "Thanh toan don hang-" +  name);
         //build query url
