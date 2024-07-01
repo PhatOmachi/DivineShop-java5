@@ -10,7 +10,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 
 # Kiểm tra sự tồn tại của file JAR
-RUN ls -l /app/app.jarx
+RUN ls -l /app/app.jar
 
 # Đảm bảo quyền truy cập đúng
 RUN chmod +x /app/app.jar
