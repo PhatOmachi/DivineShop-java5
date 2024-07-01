@@ -13,7 +13,7 @@ payment:
     url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
     tmnCode: Z7MCGZGD
     secretKey: 28LF7UIUL9Z9K0DT8EWMWWCALOF08F63
-    returnUrl: http://localhost:8080/api/v1/payment/vn-pay-callback
+    returnUrl: https://divineshopp.azurewebsites.net/api/v1/payment/vn-pay-callback
     version: 2.1.0
     command: pay
     orderType: other
