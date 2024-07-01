@@ -2,6 +2,8 @@ spring:
   application:
     api-prefix: /api/v1
     name: spring-boot-rest-api
+  transaction:
+    default-timeout: 300
 
 payment:
   vnPay:
