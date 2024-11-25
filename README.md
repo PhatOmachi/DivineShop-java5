@@ -16,11 +16,11 @@ Cảm ơn sự đóng góp của các thành viên:
 
 ## Các công nghệ sử dụng trong project
 
-**`Front-end:`** Html, Js, Css, Bootstrap, JQuery(call API)
+**`Front-end:`** Html, Js, Css, Bootstrap, JQuery(call API), ReactJS
 
 **`Back-end:`** Spring boot
 
-**`Server:`** Azure
+**`Server:`** Azure (Ubuntu 22.04)
 
 **`CI/CD:`** GitHub Action
 
