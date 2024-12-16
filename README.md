@@ -1,8 +1,8 @@
 
 # Đây là project clone nghiệp vụ của DivineShop (CodeOxi)
 
-- Tất cả những thông tin trong project đều là ảo không có thật, chúng tôi chỉ lấy dữ liệu từ web về và xây dừng nên dựa theo kiến thực của chúng tôi.
-- Bài này được thực hiện và hoàn thành trong vòng 1 tháng.
+- Tất cả những thông tin trong project đều là ảo không có thật, chúng tôi chỉ lấy dữ liệu từ web về và xây dừng nên dựa theo kiến thức của chúng tôi.
+- Bài này được thực hiện và hoàn thành cùng sự nổ lực của mọi người.
 - Project sẽ luôn cập nhật.
 ## Các thành viên trong nhóm
 
